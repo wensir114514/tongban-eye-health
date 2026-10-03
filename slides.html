@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>22 页幻灯片 · 瞳伴 山区扩展版数据图 | 脉动未来团队</title>
+<meta name="description" content="瞳伴 脉动未来团队 山区扩展版数据图：22 页参赛演示文稿的网页幻灯片视图，支持键盘翻页、缩略图导航与全屏演示。">
+<meta name="theme-color" content="#06231f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231d9484'/%3E%3Ctext x='16' y='22' font-size='17' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3E瞳%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="deckpage">
+
+<header class="deckbar">
+  <div class="deckbar__inner">
+    <a class="brand brand--light" href="index.html">
+      <span class="brand__mark">瞳</span>
+      <span>瞳伴<small style="color:#7ea39d">22 页幻灯片 · 山区扩展版数据图</small></span>
+    </a>
+    <div class="deckbar__spacer"></div>
+    <button class="dbtn" id="thumbToggle" aria-expanded="false" title="缩略图（T）">▦ 目录</button>
+    <button class="dbtn" id="deckFull" title="全屏（F）">⛶ 全屏</button>
+    <a class="dbtn" href="index.html" title="返回展示主页">← 返回主页</a>
+  </div>
+  <div class="deckbar__progress"><span id="deckProgress"></span></div>
+</header>
+
+<main class="deckmain">
+  <div class="deckstage-wrap" id="stageWrap">
+    <div class="deckstage" id="slideStage" aria-live="polite"></div>
+    <button class="decknav decknav--prev" id="deckPrev" aria-label="上一页">‹</button>
+    <button class="decknav decknav--next" id="deckNext" aria-label="下一页">›</button>
+    <div class="deckcounter" id="deckCounter">1 / 22</div>
+  </div>
+
+  <div class="thumbpanel" id="thumbPanel">
+    <div class="thumbbar">
+      <strong>缩略图导航</strong>
+      <span>点击跳转 · 键盘 ← → 翻页 · F 全屏</span>
+    </div>
+    <div class="thumbgrid" id="deckThumbs"></div>
+  </div>
+
+  <p class="deckfoot">
+    本页依据《瞳伴_脉动未来团队_山区扩展版_数据图.pptx》的信息结构重建为网页幻灯片，仅供比赛展示使用；
+    原件中的版式与装饰性配图未逐一复刻，具体数据口径以商业计划书与原始文件为准。
+  </p>
+</main>
+
+<script src="js/deck.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
